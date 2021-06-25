@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Rookies";
+}
+
+<div class="my-5">
+    <h3 class="d-inline-block">Rookies</h3>
+    <a href='@Url.Action("Create", "Rookies")' class="btn btn-primary float-right"><i class="fa fa-plus" aria-hidden="true"></i> Create new persons</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" class="text-center">#</th>
+            <th scope="col" class="text-center">ID</th>
+            <th scope="col">FullName</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Age</th>
+            <th scope="col" class="text-center">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            var index = 0;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row" class="text-center">@(++index)</th>
+                    <th class="text-center">@item.Id</th>
+                    <td>@item.FullName</td>
+                    <td>@item.Gender</td>
+                    <td>@(item.DateOfBirth.ToString("dd/MM/yyyy"))</td>
+                    <td>@item.Age</td>
+                    <td class="text-center" style="width:200px">
+                        <a href='@Url.Action("Edit", "Rookies", new {id = item.Id})' class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                        <a href='@Url.Action("Delete", "Rookies", new {id = item.Id})' class="btn btn-danger btn-sm" role="button" aria-pressed="true" 
+                            onclick="return confirm('Are you sure you want to delete this person?');"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

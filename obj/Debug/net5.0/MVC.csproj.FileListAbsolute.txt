@@ -38,5 +38,8 @@ E:\C#\MVC\obj\Debug\net5.0\ref\MVC.dll
 E:\C#\MVC\obj\Debug\net5.0\MVC.pdb
 E:\C#\MVC\obj\Debug\net5.0\MVC.genruntimeconfig.cache
 E:\C#\MVC\obj\Debug\net5.0\MVC.csproj.CopyComplete
-E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Custom\Male.cshtml.g.cs
-E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Custom\FirstOldest.cshtml.g.cs
+E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Rookies\FirstOldest.cshtml.g.cs
+E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Rookies\Index.cshtml.g.cs
+E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Rookies\Male.cshtml.g.cs
+E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Rookies\Create.cshtml.g.cs
+E:\C#\MVC\obj\Debug\net5.0\Razor\Views\Rookies\Edit.cshtml.g.cs
