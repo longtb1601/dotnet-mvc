@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\MVC\\MVC.csproj",
+      "projectUniqueName": "d:\\C#\\MVC\\MVC.csproj",
       "projectName": "MVC",
-      "projectPath": "E:\\C#\\MVC\\MVC.csproj",
+      "projectPath": "d:\\C#\\MVC\\MVC.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "E:\\C#\\MVC\\obj\\",
+      "outputPath": "d:\\C#\\MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -29,6 +29,7 @@ namespace MVC.Models
         public string Gender { get; set; }
 
         [Required]
+        [DisplayFormat(DataFormatString = "{0:dd-MMM-yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Date of birth")]
         public DateTime DateOfBirth { get; set; }
 

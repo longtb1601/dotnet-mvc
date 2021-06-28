@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MVC.Models;
@@ -20,11 +21,16 @@ namespace MVC.Controllers
 
         public IActionResult Index()
         {
+            HttpContext.Session.SetString("SESSION_USER", "Bao Long");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            var user = HttpContext.Session.GetString("SESSION_USER");
+
+            ViewBag.User = user;
+            
             return View();
         }
 

@@ -1,0 +1,10 @@
+@model Person
+@{
+    ViewData["Title"] = "Result delete a person";
+}
+
+<div class="my-5">
+    <h3 class="d-inline-block">Person @ViewBag.deletedPerson was removed from the list successfully!</h3>
+</div>
+<a href='@Url.Action("Index", "Rookies")' class="btn btn-primary">Back to list</a>
+<hr/>
